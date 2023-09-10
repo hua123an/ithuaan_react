@@ -1261,13 +1261,15 @@ export function Home() {
         <div className="main">
             <div className="menu-demo">
                 {listData.map((listDatum) => (
-                    <Link href={listDatum.href}>
+                    <Link href={listDatum.href} key={listDatum
+                        .key}>
                     <List.Item key={listDatum.key} style={{ listStyle : "none" , float: "left" , paddingLeft : 100}}>
                         {listDatum.data}
                     </List.Item>
         </Link>
                 ))}
             </div>
+
             <div className="card">
                 <div className="choseColor">
                     <h2 id="choseColor">选色网站</h2>
@@ -1297,6 +1299,7 @@ export function Home() {
                     ))}
                 </div>
                 </div>
+
             <div className="compileTools">
                 <h2 id="compileTools">编译工具</h2>
                 {dataList.compileTools.map((item) => (
@@ -1310,6 +1313,7 @@ export function Home() {
                     </Link>
                 ))}
             </div>
+
             <div className="technologyLearning">
                 <h2 id="technologyLearning">技术学习</h2>
                 {dataList.technologyLearning.map((item) => (
@@ -1323,6 +1327,7 @@ export function Home() {
                     </Link>
                 ))}
             </div>
+
             <div className="developSoftware">
                 <h2 id="developSoftware">开发软件</h2>
                 {dataList.developSoftware.map((item) => (
@@ -1336,6 +1341,7 @@ export function Home() {
                     </Link>
                 ))}
             </div>
+
             <div className="publicIcon">
                 <h2 id="publicIcon">公共图标库</h2>
                 {dataList.publicIcon.map((item) => (
@@ -1349,6 +1355,7 @@ export function Home() {
                     </Link>
                 ))}
             </div>
+
             <div className="onlineTools">
                 <h2 id="onlineTools">在线工具</h2>
                 {dataList.onlineTools.map((item) => (
@@ -1362,6 +1369,7 @@ export function Home() {
                     </Link>
                 ))}
             </div>
+
             <div className="codeManager">
                 <h2 id="codeManager">代码托管</h2>
                 {dataList.codeManager.map((item) => (
@@ -1375,6 +1383,7 @@ export function Home() {
                     </Link>
                 ))}
             </div>
+
             <div className="searchEngine">
                 <h2 id="searchEngine">搜索引擎</h2>
                 {dataList.searchEngine.map((item) => (
@@ -1388,12 +1397,6 @@ export function Home() {
                     </Link>
                 ))}
             </div>
-
-
-
-
-
-
 
             </div>
     )
