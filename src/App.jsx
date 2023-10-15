@@ -8,18 +8,63 @@ import {Key} from "./Views/Key/Key.jsx";
 import {Source} from "./Views/Source/Source.jsx";
 import {University} from "./Views/University/University.jsx";
 import {OpenSource} from "./Views/OpenSource/OpenSource.jsx";
+const style = {
+    textAlign : "center",
+    marginLeft : 150,
+    textDecoration : "none"
+}
+const list = [
+    {
+        "key" : Math.random(),
+        "href" : "/",
+        "name" : "首页"
+    },
+    {
+        "key" : Math.random(),
+        "href" : "/blog",
+        "name" : "博客"
+    },
+    {
+        "key" : Math.random(),
+        "href" : "/ai",
+        "name" : "AI专区"
+    },
+    {
+        "key" : Math.random(),
+        "href" : "/programming",
+        "name" : "前端开发"
+    },
+    {
+        "key" : Math.random(),
+        "href" : "/academic",
+        "name" : "学术专区"
+    },
+    {
+        "key" : Math.random(),
+        "href" : "/key",
+        "name" : "激活密钥"
+    },
+    {
+        "key" : Math.random(),
+        "href" : "/source",
+        "name" : "资源"
+    },
+    {
+        "key" : Math.random(),
+        "href" : "/university",
+        "name" : "大学生"
+    },
+    {
+        "key" : Math.random(),
+        "href" : "/opensource",
+        "name" : "开源项目"
+    },
+]
 const linkList = () => {
     return(
         <>
-            <Link to="/">首页</Link>
-            <Link to="/blog">博客</Link>
-            <Link to="/ai">AI专区</Link>
-            <Link to="/programming">前端开发</Link>
-            <Link to="/academic">学术专区</Link>
-            <Link to="/key">激活密钥</Link>
-            <Link to="/source">资源</Link>
-            <Link to="/university">大学生专区</Link>
-            <Link to="/opensource">开源项目</Link>
+            {list.map(item =>
+            <Link to={item.href} key={item.key} style={style}>{item.name}</Link>)}
         </>
 
     )
@@ -39,11 +84,10 @@ const routeList = () => {
         </Routes>
     )
 }
-
 export const App = () => {
     return (
         <Router>
-
+            {linkList()}
             {routeList()}
         </Router>
     )

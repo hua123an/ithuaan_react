@@ -1338,27 +1338,27 @@ export function Programming() {
 
     }
     const listData = ([
-        {'data' : "前端教程" , "href" : "class" , "key" : "0001"},
-        {'data' : '动画库' , 'href' : 'animation', "key" : "0002"},
-        {'data' : 'js框架' , 'href' : 'jsFrame', "key" : "0003"},
-        {'data' : 'UI框架' ,'href' : 'uiFrame', "key" : "0004"},
-        {'data' : 'web资源' ,'href' : 'webSource', "key" : "0005"},
-        {'data' : 'web插件' ,'href' : 'webPlugin', "key" : "0006"},
-        {'data' : '代码高亮' ,'href' : 'codeHighlight', "key" : "0007"},
-        {'data' : '图表库' ,'href' : 'chart', "key" : "0008"},
-        {'data' : '包管理器' ,'href' : 'packageManager', "key" : "0009"},
-        {'data' : '构建工具' ,'href' : 'buildTools', "key" : "0010"},
-        {'data' : '模块加载' ,'href' : 'moduleLoading', "key" : "0011"},
-        {'data' : '模块引擎' ,'href' : 'moduleEngine', "key" : "0012"},
-        {'data' : '游戏引擎' ,'href' : 'gameEngine', "key" : "0013"},
-        {'data' : '移动框架' ,'href' : 'mobileFrame', "key" : "0014"},
+        {'data' : "前端教程" , "href" : "#class" , "key" : "0001"},
+        {'data' : '动画库' , 'href' : '#animation', "key" : "0002"},
+        {'data' : 'js框架' , 'href' : '#jsFrame', "key" : "0003"},
+        {'data' : 'UI框架' ,'href' : '#uiFrame', "key" : "0004"},
+        {'data' : 'web资源' ,'href' : '#webSource', "key" : "0005"},
+        {'data' : 'web插件' ,'href' : '#webPlugin', "key" : "0006"},
+        {'data' : '代码高亮' ,'href' : '#codeHighlight', "key" : "0007"},
+        {'data' : '图表库' ,'href' : '#chart', "key" : "0008"},
+        {'data' : '包管理器' ,'href' : '#packageManager', "key" : "0009"},
+        {'data' : '构建工具' ,'href' : '#buildTools', "key" : "0010"},
+        {'data' : '模块加载' ,'href' : '#moduleLoading', "key" : "0011"},
+        {'data' : '模块引擎' ,'href' : '#moduleEngine', "key" : "0012"},
+        {'data' : '游戏引擎' ,'href' : '#gameEngine', "key" : "0013"},
+        {'data' : '移动框架' ,'href' : '#mobileFrame', "key" : "0014"},
     ])
     return (
         <div className="main">
             <div className="menu-demo">
-                {listData.map((listDatum) => (
-                    <Link href={listDatum.href}>
-                        <List.Item key={listDatum.key} style={{ listStyle : "none" , float: "left" , paddingLeft : 100}}>
+                {listData.map(listDatum => (
+                    <Link href={listDatum.href} key={listDatum.key}>
+                        <List.Item  style={{ listStyle : "none" , float: "left" , paddingLeft : 100}}>
                             {listDatum.data}
                         </List.Item>
                     </Link>
@@ -1367,7 +1367,7 @@ export function Programming() {
             <div className="card">
                 <div className="choseColor">
                     <h2 id="choseColor">选色网站</h2>
-                    {dataList.choseColor.map((item) => (
+                    {dataList.choseColor.map(item => (
                         <Link href={item.titleLink} target="_blank">
                             <Card hoverable bordered="true" style={{ width: 200 , height : 200 , border : 3 }}>
                                 <img src={item.img} alt="" style={{height : 50 , width : 50}}/>
