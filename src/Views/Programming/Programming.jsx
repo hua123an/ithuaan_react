@@ -1,4 +1,4 @@
-import {Link, Card, Tabs, List} from "@arco-design/web-react";
+import {Link, Card,  List} from "@arco-design/web-react";
 const Meta = Card.Meta
 export function Programming() {
     const dataList = {

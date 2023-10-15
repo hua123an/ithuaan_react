@@ -1,6 +1,6 @@
 import {Link, Card, Tabs, List} from "@arco-design/web-react";
 const Meta = Card.Meta
-export function OpenSource() {
+export const OpenSource = () => {
     const dataList = {
         vueProject : [{
             "title" : " vue2-elm",

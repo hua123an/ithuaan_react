@@ -1403,14 +1403,14 @@ export function AI() {
     }
 // save navigation bar data
     const listData = ([
-        {'data' : "AI应用" , "href" : "aiApplication" , "key" : "001"},
-        {'data' : 'AI编程' , 'href' : 'aiProgramming', "key" : "002"},
-        {'data' : 'AI写作' , 'href' : 'aiWrite', "key" : "003"},
-        {'data' : 'AI设计' ,'href' : 'aiDesign', "key" : "004"},
-        {'data' : 'AI绘画' ,'href' : 'aiPainting', "key" : "005"},
-        {'data' : 'AI模型' ,'href' : 'aiModel', "key" : "006"},
-        {'data' : 'AI影音' ,'href' : 'aiAudio', "key" : "007"},
-        {'data' : 'AI办公' ,'href' : 'aiWorking', "key" : "008"},
+        {'data' : "AI应用" , "href" : "#aiApplication" , "key" : "001"},
+        {'data' : 'AI编程' , 'href' : '#aiProgramming', "key" : "002"},
+        {'data' : 'AI写作' , 'href' : '#aiWrite', "key" : "003"},
+        {'data' : 'AI设计' ,'href' : '#aiDesign', "key" : "004"},
+        {'data' : 'AI绘画' ,'href' : '#aiPainting', "key" : "005"},
+        {'data' : 'AI模型' ,'href' : '#aiModel', "key" : "006"},
+        {'data' : 'AI影音' ,'href' : '#aiAudio', "key" : "007"},
+        {'data' : 'AI办公' ,'href' : '#aiWorking', "key" : "008"},
     ])
     return (
         <div className="main">
